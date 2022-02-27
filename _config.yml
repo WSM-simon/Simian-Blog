@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Simian's blog
 subtitle: ""
-description: ""
+description: "知之为知之，不知为不知，是知也。"
 keywords:
-author: John Doe
+author: Wang Simian
 language: en
 timezone: ""
 
@@ -105,3 +105,5 @@ deploy:
   - type: git
     repo: git@github.com:WSM-simon/Simian-Blog.git
     branch: coding-pages
+
+
