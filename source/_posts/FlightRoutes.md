@@ -1,3 +1,10 @@
+---
+title: My first blog
+date: 2024-04-27 22:50:23
+tags:
+categories: Solutions
+---
+
 # Solution to FlightRoutes
 ```c++
 #include <bits/stdc++.h>
