@@ -104,6 +104,6 @@ theme: next
 deploy:
   - type: git
     repo: git@github.com:WSM-simon/Simian-Blog.git
-    branch: coding-pages
+    branch: main
 
 
