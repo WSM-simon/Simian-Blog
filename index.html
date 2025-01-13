@@ -122,17 +122,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">1</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">2</span></a>
 
   </li>
   </ul>
@@ -166,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wsm-simon.github.io/2024/04/27/FlightRoutes/">
+    <link itemprop="mainEntityOfPage" href="https://wsm-simon.github.io/2024/04/27/Subordinates/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -180,7 +180,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/04/27/FlightRoutes/" class="post-title-link" itemprop="url">My first blog</a>
+            <a href="/2024/04/27/Subordinates/" class="post-title-link" itemprop="url">My first blog</a>
         </h2>
 
         <div class="post-meta">
@@ -197,7 +197,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-01-13 01:55:55" itemprop="dateModified" datetime="2025-01-13T01:55:55-05:00">2025-01-13</time>
+                <time title="Modified: 2025-01-13 02:07:48" itemprop="dateModified" datetime="2025-01-13T02:07:48-05:00">2025-01-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,10 +220,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Solution-to-Flight-Routes"><a href="#Solution-to-Flight-Routes" class="headerlink" title="Solution to Flight Routes"></a>Solution to Flight Routes</h1><p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1196/">Website to Flight Route</a></p>
+          <h1 id="Solution-to-Subordinates"><a href="#Solution-to-Subordinates" class="headerlink" title="Solution to Subordinates"></a>Solution to Subordinates</h1><p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1674">Website to Subordinates</a></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2024/04/27/FlightRoutes/#more" rel="contents">
+              <a class="btn" href="/2024/04/27/Subordinates/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -247,7 +247,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wsm-simon.github.io/2024/04/27/sssss-pooo/">
+    <link itemprop="mainEntityOfPage" href="https://wsm-simon.github.io/2024/04/27/FlightRoutes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -261,7 +261,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/04/27/sssss-pooo/" class="post-title-link" itemprop="url">My first blog</a>
+            <a href="/2024/04/27/FlightRoutes/" class="post-title-link" itemprop="url">Solution to FlightRoutes</a>
         </h2>
 
         <div class="post-meta">
@@ -278,7 +278,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-01-13 00:56:53" itemprop="dateModified" datetime="2025-01-13T00:56:53-05:00">2025-01-13</time>
+                <time title="Modified: 2025-01-13 02:08:30" itemprop="dateModified" datetime="2025-01-13T02:08:30-05:00">2025-01-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -301,144 +301,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Solution-to-FlightRoutes"><a href="#Solution-to-FlightRoutes" class="headerlink" title="Solution to FlightRoutes"></a>Solution to FlightRoutes</h1><pre><code class="c++">#include &lt;bits/stdc++.h&gt;
-#define ll long long
-#define pli pair&lt;ll, int&gt;
-#define f first
-#define s second
-
-using namespace std;
-
-const ll inf = 1e18;
-const int Max = 1e5 + 3;
-int N, M, K;
-vector&lt;vector&lt;ll&gt;&gt; dis;
-vector&lt;pli&gt; graph[Max];
-
-int main()
-&#123;
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
-    cin &gt;&gt; N &gt;&gt; M &gt;&gt; K;
-    dis.resize(N + 1);
-    for (int i = 0; i &lt; M; ++i)
-    &#123;
-        int e1, e2, w;
-        cin &gt;&gt; e1 &gt;&gt; e2 &gt;&gt; w;
-        graph[e1].push_back(&#123;w, e2&#125;);
-    &#125;
-
-    for (int i = 0; i &lt;= N; ++i)
-    &#123;
-        dis[i].resize(K);
-        for (int j = 0; j &lt; K; ++j)
-            dis[i][j] = inf;
-    &#125;
-
-    dis[1][0] = 0;
-    priority_queue&lt;pli, vector&lt;pli&gt;, greater&lt;pli&gt;&gt; pq;
-    pq.push(&#123;0, 1&#125;);
-
-    while (!pq.empty())
-    &#123;
-        pli n = pq.top();
-        pq.pop();
-        if (dis[n.s][K - 1] &lt; n.f)
-            continue;
-
-        for (pli v : graph[n.s])
-            if (dis[v.s][K - 1] &gt; n.f + v.f)
-            &#123;
-                dis[v.s][K - 1] = n.f + v.f;
-                pq.push(&#123;dis[v.s][K - 1], v.s&#125;);
-                sort(dis[v.s].begin(), dis[v.s].end());
-            &#125;
-    &#125;
-
-    for (int i = 0; i &lt; K; ++i)
-        cout &lt;&lt; dis[N][i] &lt;&lt; &#39; &#39;;
-    return 0;
-&#125;
-···
-</code></pre>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wsm-simon.github.io/2022/02/27/My-first-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Wang Simian">
-      <meta itemprop="description" content="知之为知之，不知为不知，是知也。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simian's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/27/My-first-blog/" class="post-title-link" itemprop="url">My first blog</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-27 11:50:45" itemprop="dateCreated datePublished" datetime="2022-02-27T11:50:45-05:00">2022-02-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-01-13 00:56:53" itemprop="dateModified" datetime="2025-01-13T00:56:53-05:00">2025-01-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Testing/" itemprop="url" rel="index"><span itemprop="name">Testing</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Hello-Wo"><a href="#Hello-Wo" class="headerlink" title="Hello Wo"></a>Hello Wo</h1><p>Hi, this is my first blog.<br>1111</p>
+          <h1 id="Solution-to-FlightRoutes"><a href="#Solution-to-FlightRoutes" class="headerlink" title="Solution to FlightRoutes"></a>Solution to FlightRoutes</h1><p><a target="_blank" rel="noopener" href="https://cses.fi/problemset/task/1196/">Websites to FlightRoughts</a></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/02/27/My-first-blog/#more" rel="contents">
+              <a class="btn" href="/2024/04/27/FlightRoutes/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -526,20 +392,20 @@ int main()
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
